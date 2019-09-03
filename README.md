@@ -8,7 +8,7 @@ https://github.com/Jamal-Ra-Davis/Guardians-of-Sunshine---Win-exe
 Adapted to be used on Gameboy Zero and similar projects
 
 
-#Installation
+### Installation
 
 Update libraries (skip this to save time if yours are up-to-date)
 ```
@@ -45,7 +45,7 @@ To start/run the game
 
 ```
 
-#Controls:
+### Controls
 
 [LEFT/RIGHT/UP/DOWN]: Move
 [A]: Jump
