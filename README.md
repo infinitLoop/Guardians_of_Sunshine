@@ -47,7 +47,7 @@ To start/run the game
 
 ### Controls
 
-[LEFT/RIGHT/UP/DOWN]: Move
+[LEFT|RIGHT|UP|DOWN]: Move
 
 [A]: Jump
 
