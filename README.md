@@ -47,19 +47,19 @@ To start/run the game
 
 ### Controls
 
-[UP|DOWN|LEFT|RIGHT]: Move
+[ LEFT|RIGHT|UP|DOWN ]: Move
 
-[A]: Jump
+[ A ]: Jump
 
-[B]: Spin Kick
+[ B ]: Spin Kick
 
-[X]: Take out/throw bomba
+[ X ]: Take out/throw bomba
 
-[Enter]: Show Menu
+[ Enter/Start ]: Show Menu
 
-[L]: Quit Game
+[ L/Left Bumper ]: Quit Game
 
-[R]: Reset Game
+[ R/Right Bumper ]: Reset Game
 
 ### Combo Move
 
