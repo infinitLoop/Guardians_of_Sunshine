@@ -1047,19 +1047,19 @@ void Level1State::keyPressed(int k)
 			//y1 += scroll_val;
 			break;
 		}
-		case SDLK_SPACE:
+		case SDLK_a:
 		{
 			//player->setJumping(true);
 			gos_player->setJumping(true);
 			comboMove->setJumping(true);
 			break;
 		}
-		case SDLK_LSHIFT:
+		case SDLK_l:
 		{
 			//player->setGliding(true);
 			break;
 		}
-		case SDLK_z:
+		case SDLK_y:
 		{
 			//player->setScratching();
 			gos_player->setKicking();
@@ -1072,7 +1072,7 @@ void Level1State::keyPressed(int k)
 			gos_player->bombaAction();
 			break;
 		}
-		case SDLK_RETURN:
+		case SDLK_SPACE:
 		{	
 			gos_startmenu->setVisible(true);
 			break;
@@ -1110,12 +1110,12 @@ void Level1State::keyReleased(int k)
 			gos_player->setDown(false);
             break;
         }
-        case SDLK_SPACE:
+        case SDLK_a:
         {
             gos_player->setJumping(false);
             break;
         }
-        case SDLK_LSHIFT:
+        case SDLK_l:
         {
             //player->setGliding(false);
 			bgm->stop();
@@ -1123,14 +1123,14 @@ void Level1State::keyReleased(int k)
 			gsm->setState(GameStateManager::TITLE_STATE);
             break;
         }
-		case SDLK_RSHIFT:
+		case SDLK_r:
         {
 			bgm->stop();
 			level_sounds[LEVEL_LOSE_SFX]->stop(-1);
 			*(GamePanel::isRunningControl) = false;
             break;
         }
-		case SDLK_RETURN:
+		case SDLK_SPACE:
         {
             gos_startmenu->setVisible(false);
             break;
