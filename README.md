@@ -54,7 +54,7 @@ sudo mkdir /home/pi/RetroPie/roms/adventuretime
 sudo nano /home/pi/RetroPie/roms/adventuretime/GuardiansOfSunshine.sh
 
 ```
-Paste the commands to execute into the new file:
+Paste the commands to execute into the new file and save it:
 ```
 
 cd /home/pi/Guardians_of_Sunshine/
@@ -69,7 +69,7 @@ Edit the file:
 sudo nano ~/.emulationstation/es_systems.cfg
 
 ```
-and add in the configuration info after the <SYSTEMS> tag and before the first, existing <SYSTEM> block:
+and add in the configuration info after the SYSTEMS tag and before the first, existing SYSTEM block:
 ```
 
 <system>
@@ -101,7 +101,7 @@ sudo chmod -R 777 /home/pi/Guardians_of_Sunshine
 ```
 
 
-### Controls
+### Game Controls
 
 <b>LEFT|RIGHT|UP|DOWN</b>: Move
 
