@@ -90,7 +90,8 @@ sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulation
 
 ```
 
-Note: You will need to add the "adventuretime" System folder to any ES Theme for it to show the System's logo and background.  I've added a theme.xml and gamelist.xml here as examples, along with a system.png file and a jpg to display for boxart.
+Note: You will need to add the "adventuretime" System folder to any ES Theme for it to show the System's logo and background.  I've added a theme.xml and gamelist.xml here as examples, along with a background.png, system.png, and a jpg to display for boxart.
+
 
 
 In the case of a permissions error on the folder, access to the folder/files may need to get set:
