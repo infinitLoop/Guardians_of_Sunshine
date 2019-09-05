@@ -45,6 +45,62 @@ To start/run the game
 
 ```
 
+### Installing into EmulationStation
+
+First we need to create a new ROMs folder and a Shell Script inside it that will execute the game:
+```
+sudo mkdir /home/pi/RetroPie/roms/adventuretime
+
+sudo nano /home/pi/RetroPie/roms/adventuretime/GuardiansOfSunshine.sh
+
+```
+Paste the commands to execute into the new file:
+```
+
+cd /home/pi/Guardians_of_Sunshine/
+sudo ./GuardiansOfSunshine
+
+```
+
+Next we need to add a custom system for the new ROM to the EmulationStation config.
+Edit the file:
+```
+
+sudo nano ~/.emulationstation/es_systems.cfg
+
+```
+and add in the configuration info after the <SYSTEMS> tag and before the first, existing <SYSTEM> block:
+```
+
+<system>
+    <name>adventuretime</name>
+    <fullname>Adventure Time Games</fullname>
+    <path>/home/pi/RetroPie/roms/adventuretime</path>
+    <extension>.sh .SH</extension>
+    <command>%ROM%</command>
+    <theme>adventuretime</theme>
+</system>
+
+```
+
+Backup the config so that updates to ES do not overwrite the changes:
+```
+
+sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
+
+```
+
+Note: You will need to add the "adventuretime" System folder to any ES Theme for it to show the System's logo and background.  I've added a theme.xml and gamelist.xml here as examples, along with a system.png file and a jpg to display for boxart.
+
+
+In the case of a permissions error on the folder, access to the folder/files may need to get set:
+```
+
+sudo chmod -R 777 /home/pi/Guardians_of_Sunshine
+
+```
+
+
 ### Controls
 
 <b>LEFT|RIGHT|UP|DOWN</b>: Move
