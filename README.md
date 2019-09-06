@@ -62,6 +62,13 @@ sudo ./GuardiansOfSunshine
 
 ```
 
+Backup the config so that updates to ES do not overwrite the changes:
+```
+
+sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
+
+```
+
 Next we need to add a custom system for the new ROM to the EmulationStation config.
 Edit the file:
 ```
@@ -83,12 +90,6 @@ and add in the configuration info after the SYSTEMS tag and before the first, ex
 
 ```
 
-Backup the config so that updates to ES do not overwrite the changes:
-```
-
-sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
-
-```
 
 Note: You will need to add the "adventuretime" System folder to any ES Theme for it to show the System's logo and background.  I've added a theme.xml and gamelist.xml here as examples, along with a background.png, system.png, and a jpg to display for boxart.
 
