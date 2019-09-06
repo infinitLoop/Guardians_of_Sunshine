@@ -98,6 +98,7 @@ Note: You will need to add the "adventuretime" System folder to any ES Theme for
 In the case of a permissions error on the folder, access to the folder/files may need to get set:
 ```
 
+sudo chmod -R 777 /home/pi/RetroPie/roms/adventuretime
 sudo chmod -R 777 /home/pi/Guardians_of_Sunshine
 
 ```
