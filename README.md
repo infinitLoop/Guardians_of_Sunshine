@@ -90,10 +90,13 @@ and add in the configuration info after the SYSTEMS tag and before the first, ex
 
 ```
 
+Copy the details and boxart to the ROM folder:
+```
+sudo cp ~/Guardians_of_Sunshine/gamelist.xml ~/RetroPie/roms/adventuretime/gamelist.xml
+sudo cp ~/Guardians_of_Sunshine/*.jpg ~/RetroPie/roms/adventuretime
+```
 
-Note: You will need to add the "adventuretime" System folder to any ES Theme for it to show the System's logo and background.  I've added a theme.xml and gamelist.xml here as examples, along with a background.png, system.png, and a jpg to display for boxart.
-
-
+Note: You will need to add the "adventuretime" System folder to any ES Theme for it to show the System's logo and background.  I've added files for theme.xml, background.png, and system.png here as examples.
 
 In the case of a permissions error on the folder, access to the folder/files may need to get set:
 ```
